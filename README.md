@@ -8,7 +8,6 @@ If Gatsby is not installed globally yet:
 
 ```
 npm install --g gatsby
-
 ```
 
 Then:
