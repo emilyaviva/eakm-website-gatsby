@@ -20,14 +20,4 @@ module.exports = React.createClass({
       </DocumentTitle>
     )
   }
-<<<<<<< HEAD
-}
-
-MarkdownWrapper.propTypes = {
-  route: React.PropTypes.object,
-}
-
-export default MarkdownWrapper
-=======
 })
->>>>>>> master
