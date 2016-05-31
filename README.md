@@ -1,22 +1,4 @@
 # EAKM Website in Gatsby
-<<<<<<< HEAD
-My professional website, at [emilyaviva.com](http://emilyaviva.com).
-
-Using [Gatsby](https://github.com/gatsbyjs/gatsby), based on the [blog starter](https://github.com/gatsbyjs/gatsby-starter-blog) by Kyle Mathews, licensed under the MIT license.
-
-## Running in development
-If Gatsby is not installed globally yet:
-
-```
-npm install --g gatsby
-```
-
-Then:
-
-```
-gatsby develop
-```
-=======
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 My professional website, on [emilyaviva.github.io/eakm-website-gatsby](GitHub Pages) until I get it moved somewhere else. Or not.
@@ -39,4 +21,3 @@ npm install
 ```
 
 Navigate your web browser to http://localhost:8000.
->>>>>>> master
