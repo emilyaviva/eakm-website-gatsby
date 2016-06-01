@@ -4,9 +4,8 @@ import { prefixLink } from 'gatsby-helpers'
 import DocumentTitle from 'react-document-title'
 import { config } from 'config'
 
-// Styles for highlighted code blocks.
+import 'font-awesome/scss/font-awesome.scss'
 import 'css/zenburn.css'
-// Local styles
 import 'scss/local.scss'
 
 export default class Sass extends React.Component {
@@ -19,7 +18,7 @@ export default class Sass extends React.Component {
               <li><Link to={prefixLink('/portfolio/')}>Portfolio</Link></li>
               <li><Link to={prefixLink('/talks/')}>Talks</Link></li>
               <li><Link to={prefixLink('/resume/')}>Resume</Link></li>
-              <li><Link to={prefixLink('/contact/')}>Portfolio</Link></li>
+              <li><Link to={prefixLink('/contact/')}>Contact</Link></li>
             </ul>
           </nav>
           <section>
