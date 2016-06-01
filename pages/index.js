@@ -1,8 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router'
-import { prefixLink } from 'gatsby-helpers'
 import DocumentTitle from 'react-document-title'
 import { config } from 'config'
+import Navbar from '../shared/Navbar'
+import { prefixLink } from 'gatsby-helpers'
 
 import 'font-awesome/scss/font-awesome.scss'
 import 'css/zenburn.css'
@@ -13,14 +13,7 @@ export default class Sass extends React.Component {
     return (
       <DocumentTitle title={config.siteTitle}>
         <main>
-          <nav>
-            <ul>
-              <li><Link to={prefixLink('/portfolio/')}>Portfolio</Link></li>
-              <li><Link to={prefixLink('/talks/')}>Talks</Link></li>
-              <li><Link to={prefixLink('/resume/')}>Resume</Link></li>
-              <li><Link to={prefixLink('/contact/')}>Contact</Link></li>
-            </ul>
-          </nav>
+          <Navbar />
           <section>
             <img
               className='portrait'
