@@ -15,17 +15,13 @@ module.exports = React.createClass({
   },
   render () {
     return (
-      <div>
-        <Headroom
-          wrapperStyle={{
-            marginBottom: rhythm(1)
-          }}
-        >
+      <header>
+        <Headroom wrapperStyle={{marginBottom: rhythm(1)}}>
           <Container
             style={{
               maxWidth: 960,
               paddingTop: 0,
-              padding: `${rhythm(1)} ${rhythm(1 / 2)}`
+              padding: `${rhythm(3 / 4)} ${rhythm(1 / 2)}`
             }}
           >
             <Link to={prefixLink('/')}>
@@ -44,7 +40,7 @@ module.exports = React.createClass({
         >
           {this.props.children}
         </Container>
-      </div>
+      </header>
     )
   }
 })
