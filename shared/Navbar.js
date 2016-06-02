@@ -7,6 +7,7 @@ export default class Navbar extends React.Component {
     return (
       <nav>
         <ul>
+          <li><Link to={prefixLink('/')}>About</Link></li>
           <li><Link to={prefixLink('/portfolio/')}>Portfolio</Link></li>
           <li><Link to={prefixLink('/talks/')}>Talks</Link></li>
           <li><Link to={prefixLink('/resume/')}>Resume</Link></li>

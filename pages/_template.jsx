@@ -3,6 +3,7 @@ import { Container } from 'react-responsive-grid'
 import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import Headroom from 'react-headroom'
+import Navbar from '../shared/Navbar'
 
 import { rhythm } from 'utils/typography'
 
@@ -31,6 +32,7 @@ module.exports = React.createClass({
               <h1>Emily Aviva Kapor-Mater</h1>
               <h2>Full-Stack Software Developer</h2>
             </Link>
+            <Navbar />
           </Container>
         </Headroom>
         <Container

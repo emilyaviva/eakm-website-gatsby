@@ -2,14 +2,13 @@ import React from 'react'
 import DocumentTitle from 'react-document-title'
 import { config } from 'config'
 import ContactListItem from '../shared/ContactListItem'
-import Navbar from '../shared/Navbar'
 
 export default class Contact extends React.Component {
   render () {
     return (
       <DocumentTitle title={`${config.siteTitle} | Contact`}>
         <main>
-          <Navbar />
+          <h2>Contact</h2>
           <ul className='contactListItems'>
             <ContactListItem
               icon='github'

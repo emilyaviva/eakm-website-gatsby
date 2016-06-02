@@ -1,8 +1,25 @@
 .headroom {
   background: lightblue;
-  color: #000;
   a {
     text-decoration: none;
+  }
+  nav {
+    a, &:visited {
+      color: #000;
+      padding: 20px;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      li {
+        list-style-type: none;
+        display: row;
+        flex-direction: space-between;
+        &:hover {
+          background: cornsilk;
+        }
+      }
+    }
   }
 }
 
@@ -14,4 +31,16 @@
 
 .contactListItem {
   list-style-type: none;
+}
+
+.portfolioItem {
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100px;
+    max-height: 100px;
+    float: left;
+    margin-right: 10px;
+  }
 }
