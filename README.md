@@ -1,7 +1,7 @@
 # EAKM Website in Gatsby
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
-My professional website, on [https://emilyaviva.github.io/eakm-website-gatsby](GitHub Pages) until I get it moved somewhere else. Or not.
+My professional website, on [GitHub Pages](https://emilyaviva.github.io/eakm-website-gatsby) until I get it moved somewhere else. Or not.
 
 Using [Gatsby](https://github.com/gatsbyjs/gatsby), based on the ["kitchen sink" default starter](https://github.com/gatsbyjs/gatsby-starter-default) by Kyle Mathews, licensed under the MIT license.
 
