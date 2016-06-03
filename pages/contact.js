@@ -7,7 +7,7 @@ export default class Contact extends React.Component {
   render () {
     return (
       <DocumentTitle title={`${config.siteTitle} | Contact`}>
-        <main>
+        <main className='contact'>
           <h2>Contact</h2>
           <ul className='contactListItems'>
             <ContactListItem

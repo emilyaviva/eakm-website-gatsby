@@ -39,15 +39,40 @@ $desktop: 720px;
     }
   }
 }
-
-.portrait {
-  float: right;
-  width: 40%;
-  margin: 0 0 12px 12px;
+.about {
+  .portrait {
+    float: right;
+    width: 40%;
+    margin: 0 0 12px 12px;
+  }
+  .competencies {
+    .major-list {
+      ul {
+        margin: auto 1rem 0.5rem 2rem;
+      }
+    }
+    .sublist {
+      list-style-type: none;
+      li {
+        display: inline-block;
+        border-right: 1px dotted #000;
+        margin: 0;
+        padding: 0 6px;
+      }
+      :last-child {
+        border-right: 0;
+      }
+    }
+  }
 }
 
 .contactListItem {
   list-style-type: none;
+  .fa {
+    width: 1rem;
+    text-align: center;
+    margin-right: 0.2rem;
+  }
 }
 
 .portfolioItem {

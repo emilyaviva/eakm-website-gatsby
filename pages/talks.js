@@ -8,7 +8,7 @@ export default class Talks extends React.Component {
   render () {
     return (
       <DocumentTitle title={`${config.siteTitle} | Portfolio`}>
-        <main>
+        <main className='talks'>
           <h2>Talks</h2>
           <PortfolioItem
             name='Painting the Data Picture with D3.js'

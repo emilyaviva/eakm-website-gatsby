@@ -8,7 +8,7 @@ export default class Portfolio extends React.Component {
   render () {
     return (
       <DocumentTitle title={`${config.siteTitle} | Portfolio`}>
-        <main>
+        <main className='portfolio'>
           <h2>Portfolio</h2>
           <PortfolioItem
             name='The Extraterrestrial Birthday Calculator'

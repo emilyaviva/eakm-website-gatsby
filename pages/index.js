@@ -11,7 +11,7 @@ export default class Sass extends React.Component {
   render () {
     return (
       <DocumentTitle title={config.siteTitle}>
-        <main>
+        <main className='about'>
           <section>
             <img
               className='portrait'
@@ -22,12 +22,12 @@ export default class Sass extends React.Component {
             <p>I am a full-stack software developer who finds <em>beauty in simplicity</em>. My mission is to create useful, meaningful, and socially positive experiences for end users and for other developers.</p>
             <p>I am currently seeking software development job opportunities in the Seattle area. I obtained a certificate in Full-Stack JavaScript Development from <a href='https://www.codefellows.org/'>Code Fellows</a> in August 2015.</p>
           </section>
-          <section>
+          <section className='competencies'>
             <h3>Competencies</h3>
-            <ul>
+            <ul className='major-list'>
               <li>
                 Front-end client-side and MV* development
-                <ul>
+                <ul className='sublist'>
                   <li>React</li>
                   <li>Angular</li>
                   <li>jQuery</li>
@@ -38,7 +38,7 @@ export default class Sass extends React.Component {
               </li>
               <li>
                 Data visualization
-                <ul>
+                <ul className='sublist'>
                   <li>D3</li>
                   <li>Victory</li>
                   <li>JSON</li>
@@ -47,7 +47,7 @@ export default class Sass extends React.Component {
               </li>
               <li>
                 Backend RESTful API and database programming
-                <ul>
+                <ul className='sublist'>
                   <li>Node</li>
                   <li>Express</li>
                   <li>Heroku</li>
@@ -57,7 +57,7 @@ export default class Sass extends React.Component {
               </li>
               <li>
                 Test- and behavior-driven development
-                <ul>
+                <ul className='sublist'>
                   <li>Webpack</li>
                   <li>Gulp</li>
                   <li>Mocha</li>
