@@ -1,5 +1,6 @@
 $mobile: 480px;
 $desktop: 720px;
+$footer-height: 2em;
 
 .headroom {
   background: lightblue;
@@ -39,6 +40,32 @@ $desktop: 720px;
     }
   }
 }
+
+.master-footer {
+  height: $footer-height;
+  background: lightblue;
+  text-align: center;
+  i {
+    margin-right: 6px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+    li {
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  @media (min-width: $desktop) {
+    ul {
+      flex-direction: row;
+    }
+  }
+}
+
 .about {
   .portrait {
     float: right;

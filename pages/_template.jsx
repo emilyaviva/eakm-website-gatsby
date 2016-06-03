@@ -4,6 +4,7 @@ import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import Headroom from 'react-headroom'
 import Navbar from '../shared/Navbar'
+import Footer from '../shared/Footer'
 
 import { rhythm } from 'utils/typography'
 
@@ -15,7 +16,7 @@ module.exports = React.createClass({
   },
   render () {
     return (
-      <header>
+      <div className='page-wrap'>
         <Headroom wrapperStyle={{marginBottom: rhythm(1)}}>
           <Container
             style={{
@@ -34,13 +35,13 @@ module.exports = React.createClass({
         <Container
           style={{
             maxWidth: 960,
-            padding: `${rhythm(1)} ${rhythm(1 / 2)}`,
-            paddingTop: 0
+            padding: `${rhythm(1)} ${rhythm(1 / 2)} 0 ${rhythm(1 / 2)}}`
           }}
         >
           {this.props.children}
         </Container>
-      </header>
+        <Footer />
+      </div>
     )
   }
 })
