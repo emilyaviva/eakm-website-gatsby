@@ -2,7 +2,7 @@
   "private": true,
   "name": "eakm-website-gatsby",
   "description": "My professional website - Emily Aviva Kapor-Mater",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": {
     "name": "Emily Aviva Kapor-Mater",
     "email": "emily@emilyaviva.com",
@@ -25,7 +25,9 @@
   "license": "ISC",
   "scripts": {
     "lint": "node_modules/.bin/standard --verbose | node_modules/.bin/snazzy",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node_modules/.bin/gatsby develop",
+    "build": "node_nodules/.bin/gatsby build --prefix-links"
   },
   "standard": {
     "parser": "babel-eslint"
@@ -58,11 +60,6 @@
   "devDependencies": {
     "babel-eslint": "^6.0.4",
     "babel-preset-react-hmre": "^1.1.1",
-    "eslint": "^2.9.0",
-    "eslint-config-airbnb": "^9.0.1",
-    "eslint-plugin-import": "^1.8.0",
-    "eslint-plugin-jsx-a11y": "^1.2.0",
-    "eslint-plugin-react": "^5.1.1",
     "standard": "^7.1.1",
     "style-loader": "^0.13.1"
   }
