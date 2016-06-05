@@ -3,6 +3,7 @@ $desktop: 720px;
 $footer-height: 2em;
 
 header {
+  padding: 1.5rem;
   background: lightblue;
   a {
     text-decoration: none;
@@ -41,6 +42,13 @@ header {
   }
 }
 
+main {
+  padding: 0.5rem;
+  @media (min-width: $desktop) {
+    padding: 1.5rem;
+  }
+}
+
 .master-footer {
   height: $footer-height;
   background: lightblue;
@@ -71,6 +79,7 @@ header {
     float: right;
     width: 40%;
     margin: 0 0 12px 12px;
+    box-shadow: -12px 12px 12px 2px lightblue;
   }
   .competencies {
     .major-list {
