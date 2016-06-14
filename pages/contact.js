@@ -35,7 +35,7 @@ export default class Contact extends React.Component {
             <ContactListItem
               icon='lock'
               href='http://pgp.mit.edu/pks/lookup?op=get&search=0xC79A341B47E21F8A'
-              text='GnuPG/PGP key'
+              text='Public GnuPG/PGP key'
             />
           </ul>
           <ul className='contactListItems'>
