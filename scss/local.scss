@@ -1,10 +1,26 @@
-$mobile: 480px;
-$desktop: 720px;
-$footer-height: 2em;
+$desktop: 800px;
+$page-width: 1100px;
+$nav-link-width: 150px;
+$navbar-width: 5 * $nav-link-width;
+$footer-height: 2rem;
+
+h1 {
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 1.4rem;
+}
+h3 {
+  font-size: 1.1rem;
+}
 
 header {
   padding: 1.5rem;
   background: lightblue;
+  .header-body {
+    max-width: $page-width;
+    margin: 0 auto;
+  }
   a {
     text-decoration: none;
   }
@@ -34,8 +50,9 @@ header {
       ul {
         flex-direction: row;
         padding: 0;
+        width: 100%;
         li {
-          width: 160px;
+          width: $nav-link-width;
         }
       }
     }
@@ -43,33 +60,43 @@ header {
 }
 
 main {
-  padding: 0.5rem;
-  @media (min-width: $desktop) {
-    padding: 1.5rem;
-  }
+  padding: 1rem;
+  max-width: $page-width;
+  margin: 0 auto;
 }
 
-.master-footer {
-  height: $footer-height;
+footer {
+  height: $footer-height * 2;
   background: lightblue;
   text-align: center;
+  .footer-body {
+    max-width: $page-width;
+    margin: 0 auto;
+  }
   i {
-    margin-right: 6px;
+    margin-right: 0.5rem;
   }
   ul {
+    margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     list-style-type: none;
     li {
+      color: #080733;
       a {
         text-decoration: none;
+        color: #080733;
+        &:hover {
+          color: #0e2cc7;
+        }
       }
     }
   }
   @media (min-width: $desktop) {
+    height: $footer-height;
     ul {
       flex-direction: row;
+      justify-content: space-around;
     }
   }
 }
@@ -78,8 +105,9 @@ main {
   .portrait {
     float: right;
     width: 40%;
-    margin: 0 0 12px 12px;
-    box-shadow: -12px 12px 12px 2px lightblue;
+    margin: 5px 0 12px 12px;
+    box-shadow: 8px 8px 8px 2px lightblue;
+    border-radius: 12px;
   }
   .competencies {
     .major-list {

@@ -7,11 +7,13 @@ export default class Header extends React.Component {
   render () {
     return (
       <header>
-        <Link to={prefixLink('/')}>
-          <h1>Emily Aviva Kapor-Mater</h1>
-          <h2>Full-Stack Software Developer</h2>
-        </Link>
-        <Navbar />
+        <div className='header-body'>
+          <Link to={prefixLink('/')}>
+            <h1>Emily Aviva Kapor-Mater</h1>
+            <h2>Full-Stack Software Developer</h2>
+          </Link>
+          <Navbar />
+        </div>
       </header>
     )
   }

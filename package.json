@@ -41,7 +41,7 @@
     "front-matter": "^2.1.0",
     "gatsby": "^0.11.4",
     "highlight.js": "^9.3.0",
-    "history": "^3.0.0",
+    "history": "^2.0.0",
     "js-yaml": "^3.6.0",
     "markdown-it": "^6.0.1",
     "markdown-it-abbr": "^1.0.3",
