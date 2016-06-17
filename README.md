@@ -9,6 +9,6 @@ npm install
 npm run dev
 ```
 
-Navigate your web browser to (localhost:8000)[http://localhost:8000].
+Navigate your web browser to [localhost:8000](http://localhost:8000).
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
