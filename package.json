@@ -2,7 +2,7 @@
   "private": true,
   "name": "eakm-website-gatsby",
   "description": "My professional website - Emily Aviva Kapor-Mater",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": {
     "name": "Emily Aviva Kapor-Mater",
     "email": "emily@emilyaviva.com",
@@ -24,10 +24,12 @@
   ],
   "license": "ISC",
   "scripts": {
+    "clean": "rm -rf public/*",
     "lint": "node_modules/.bin/standard --verbose | node_modules/.bin/snazzy",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node_modules/.bin/gatsby develop",
-    "build": "node_modules/.bin/gatsby build --prefix-links"
+    "build": "node_modules/.bin/gatsby build",
+    "serve-build": "NODE_ENV=production node_modules/.bin/gatsby build && node_modules/.bin/gatsby serve-build"
   },
   "standard": {
     "parser": "babel-eslint"
