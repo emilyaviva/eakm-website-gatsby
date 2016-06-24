@@ -29,6 +29,7 @@ export default class Sass extends React.Component {
                 Front-end client-side and MV* development
                 <ul className='sublist'>
                   <li>React</li>
+                  <li>Redux</li>
                   <li>Angular</li>
                   <li>jQuery</li>
                   <li>Sass</li>
@@ -43,6 +44,15 @@ export default class Sass extends React.Component {
                   <li>Victory</li>
                   <li>JSON</li>
                   <li>Open data</li>
+                </ul>
+              </li>
+              <li>
+                Static site generation
+                <ul className='sublist'>
+                  <li>Gatsby</li>
+                  <li>Webpack</li>
+                  <li>Browserify</li>
+                  <li>Stateless component achitecture</li>
                 </ul>
               </li>
               <li>
