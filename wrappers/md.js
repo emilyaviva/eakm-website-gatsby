@@ -3,12 +3,12 @@ import 'css/markdown-styles.css'
 import DocumentTitle from 'react-document-title'
 import { config } from 'config'
 
-module.exports = React.createClass({
+export default class MarkdownWrapper extends React.Component {
   propTypes () {
     return {
       router: React.PropTypes.object
     }
-  },
+  }
   render () {
     const post = this.props.route.page.data
     return (
@@ -20,4 +20,4 @@ module.exports = React.createClass({
       </DocumentTitle>
     )
   }
-})
+}
