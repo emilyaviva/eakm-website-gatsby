@@ -5,20 +5,13 @@ import { TypographyStyle } from 'utils/typography'
 
 const BUILD_TIME = new Date().getTime()
 
-module.exports = React.createClass({
-  propTypes () {
-    return {
-      title: React.PropTypes.string
-    }
-  },
+class Html extends React.Component {
   render () {
     const title = DocumentTitle.rewind()
-
     let css
     if (process.env.NODE_ENV === 'production') {
       css = <style dangerouslySetInnerHTML={{ __html: require('!raw!./public/styles.css') }} />
     }
-
     return (
       <html lang='en'>
         <head>
@@ -40,4 +33,10 @@ module.exports = React.createClass({
       </html>
     )
   }
-})
+}
+
+Html.propTypes = {
+  title: React.PropTypes.string
+}
+
+export default Html

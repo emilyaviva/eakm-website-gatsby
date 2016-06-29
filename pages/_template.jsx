@@ -2,12 +2,7 @@ import React from 'react'
 import Header from '../shared/Header'
 import Footer from '../shared/Footer'
 
-module.exports = React.createClass({
-  propTypes () {
-    return {
-      children: React.PropTypes.any
-    }
-  },
+class Template extends React.Component {
   render () {
     return (
       <div className='page-wrap'>
@@ -17,4 +12,10 @@ module.exports = React.createClass({
       </div>
     )
   }
-})
+}
+
+Template.propTypes = {
+  children: React.PropTypes.any
+}
+
+export default Template
