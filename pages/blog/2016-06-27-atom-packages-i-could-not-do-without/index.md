@@ -1,7 +1,9 @@
 ---
 path: /blog/atom-packages-i-could-not-do-without
+date: 2016-06-27T00:00PT
+title: Atom packages I could not do without
 ---
-# Atom Packages I Could Not Do Without
+My editor of choice these days is [Atom](https://atom.io/). Part of what makes Atom so great is its package ecosystem. However, the sheer number of packages available can often be intimidating and confusing. I thought I'd share the highlights of what's currently in my Atom configuration and hopefully provide some package-navigation guidance people who may be thinking of giving Atom a try as well as Atom veterans.
 
 ### Code Linting
 The most important Atom linting package, of course, is [`linter`](https://atom.io/packages/linter). This gives all the language-specific linters a framework to plug into inside Atom, letting them display linting messages on screen as you type.
@@ -15,11 +17,11 @@ I don't know how I lived without [`color-picker`](https://atom.io/packages/color
 
 Another must-have color package is [`pigments`](https://github.com/abe33/atom-pigments). This shows all instances of colors against a background of that color. So when you type `#2c64af`, it'll actually show you what color that is (it's a soft blue). This is particularly useful when you're working in something like Sass, where colors can take their values from variables.
 
-Atom has a way to use [EditorConfig](http://editorconfig.org/) with the `editorconfig` package. This is a must-have for maintaining a consistent coding style when people in your project are working in different editors or IDEs. It reads its settings from the `.editorconfig` file in your project.
+Atom has a way to use [EditorConfig](http://editorconfig.org/) with the [`editorconfig`](https://atom.io/packages/editorconfig) package. This is a must-have for maintaining a consistent coding style when people in your project are working in different editors or IDEs. It reads its settings from the `.editorconfig` file in your project.
 
 One of the most useful packages is [`emmet`](https://atom.io/packages/emmet), which lets you expand abbreviations so you can avoid typing the same repetitive sequences over and over. This is particularly important when you're writing HTML or CSS.
 
-Another package you'll want for writing HTML is [`autoclose-html`](https://atom.io/packages/autoclose-html). When you type `<li>` it'll automatically add `</li>` for you.
+Another package you'll want for writing HTML is [`autoclose-html`](https://atom.io/packages/autoclose-html). When you type `<li>` it'll automatically add `</li>` for you. This also works when you're writing JSX
 
 I use [`sort-lines`](https://github.com/atom/sort-lines) for assisting with some extremely tedious sorting (obviously).
 
@@ -38,4 +40,4 @@ If you're working in React, check out [`nuclide`](http://nuclide.io). It's a pre
 
 Now that I've switched to Atom completely, I find myself missing the old built-in Tetris game in emacs (`M-x tetris`). Thank goodness for the Atom package [`tetromino`](https://atom.io/packages/tetromino).
 
-What did I miss? What are your favorite Atom packages? [Let me know!](http://emilyaviva.com/contact)
+What did I miss? What are your favorite Atom packages? Let me know below!

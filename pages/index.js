@@ -4,10 +4,9 @@ import { config } from 'config'
 import { prefixLink } from 'gatsby-helpers'
 
 import 'font-awesome/scss/font-awesome.scss'
-import 'css/zenburn.css'
-import 'scss/local.scss'
+import 'stylesheets/manifest.scss'
 
-export default class Sass extends React.Component {
+export default class Index extends React.Component {
   render () {
     return (
       <DocumentTitle title={config.siteTitle}>

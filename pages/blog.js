@@ -9,7 +9,6 @@ import { config } from 'config'
 class BlogIndex extends React.Component {
   render () {
     const pageLinks = []
-    // Sort pages.
     const sortedPages = sortBy(this.props.route.pages, (page) =>
       access(page, 'data.date')
     ).reverse()
@@ -25,11 +24,11 @@ class BlogIndex extends React.Component {
     })
     return (
       <DocumentTitle title={config.blogTitle}>
-        <div>
+        <main className='blog-index'>
           <ul>
             {pageLinks}
           </ul>
-        </div>
+        </main>
       </DocumentTitle>
     )
   }
