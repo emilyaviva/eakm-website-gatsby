@@ -20,14 +20,15 @@ class MarkdownWrapper extends React.Component {
             <h1 className='title'>{post.title}</h1>
           </section>
           <article dangerouslySetInnerHTML={{ __html: post.body }} />
-          <ReactDisqusThread
-            shortname='example'
-            identifier='blahblahblah'
-            title='Example Thread'
-            url=''
-            category_id='123456'
-            onNewComment={this.handleNewComment}
-          />
+          <div className='disqus-wrapper'>
+            <ReactDisqusThread
+              shortname='eakm-blog'
+              identifier={post.title}
+              title={post.title}
+              url={`http://emilyaviva.com/blog/${this.props.route.page.path}`}
+              onNewComment={this.handleNewComment}
+            />
+          </div>
         </main>
       </DocumentTitle>
     )
